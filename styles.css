@@ -1,0 +1,233 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  background-color: whitesmoke;
+}
+
+/*        Header Section          */
+.header {
+  height: 160px;
+  text-align: center;
+  padding-top: 30px;
+  line-height: 40px;
+}
+
+.header span,
+.comment span {
+  background-color: black;
+  color: white;
+  margin-left: 5px;
+  padding: 5px;
+}
+
+/*        Container Section          */
+.container {
+  font-family: "Raleway", sans-serif;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+/*        Left Section          */
+.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  background-color: white;
+  margin: 15px;
+  box-shadow: 0px 1px 10px 1px rgb(160, 160, 160);
+}
+
+.main img {
+  width: 100%;
+}
+
+.title {
+  font-size: 20px;
+}
+
+.foot {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bolder;
+  margin-top: 30px;
+}
+
+.foot button {
+  border: 1px solid rgb(218, 210, 210);
+  padding: 15px;
+  background-color: white;
+  font-weight: bolder;
+}
+
+.foot button:hover {
+  background: rgb(223, 222, 222);
+  cursor: pointer;
+}
+
+.content {
+  margin: 15px;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+/*        Right Section          */
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.menu {
+  flex: 25%;
+  margin: 15px;
+  background-color: white;
+  box-shadow: 0px 1px 10px 1px rgb(160, 160, 160);
+}
+
+.menu img {
+  width: 100%;
+}
+
+/*        Posts Section          */
+
+.posts {
+  flex: 25%;
+  margin: 15px;
+  background-color: white;
+  box-shadow: 0px 1px 10px 1px rgb(160, 160, 160);
+}
+
+.posts img {
+  width: 50px;
+  height: 50px;
+  margin: 0px 15px;
+}
+
+.posts div {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  line-height: 25px;
+}
+
+.posts hr,
+.tags hr {
+  margin: 0;
+  padding: 0;
+  color: whitesmoke;
+  border: 1px solid rgb(224, 224, 224);
+  border-bottom: none;
+}
+
+.posts div:hover:not(.h-post) {
+  background-color: rgb(216, 213, 213);
+}
+
+/*        Tag Section          */
+
+.tags {
+  flex: 25%;
+  margin: 15px;
+  background-color: white;
+  box-shadow: 0px 1px 10px 1px rgb(160, 160, 160);
+}
+
+.tags div {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+
+.c-tag {
+  margin-right: 20px;
+}
+
+.c-tag div {
+  background-color: rgb(236, 233, 233);
+  margin: 10px 3px;
+  font-size: 12px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/*        Footer Section          */
+
+.footer {
+  background-color: rgb(104, 104, 104);
+  padding: 40px;
+}
+
+.footer button {
+  margin-bottom: 15px;
+  border: none;
+  font-size: 15px;
+}
+
+.footer #b1 {
+  padding: 15px 30px;
+  background-color: rgb(71, 71, 71);
+  color: rgb(153, 151, 151);
+}
+
+.footer #b2 {
+  background-color: black;
+  color: white;
+  padding: 15px 25px;
+}
+
+.footer div {
+  color: white;
+}
+
+.footer > div > a {
+  color: #6f1d1b;
+}
+
+.footer #b1:hover {
+  background-color: #727171;
+  cursor: not-allowed;
+}
+
+.footer #b2:hover {
+  background-color: #b4b3b3;
+  cursor: pointer;
+  color: black;
+}
+
+@media only screen and (max-width: 990px) {
+  .container {
+    flex-wrap: wrap;
+  }
+}
+
+/*        About Me          */
+
+.about {
+  margin: 0;
+  padding: 0;
+  background-color: #3e5c76;
+}
+
+.we {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  height: 100vh;
+}
+
+.we img {
+  width: 55%;
+  box-shadow: 0px 1px 10px 1px rgb(160, 160, 160);
+}
